@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main_back"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".Fragment.RegistrationFragment">
+
+    <com.example.fooddeliveryapp.View.InputField
+        android:id="@+id/input_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:inputType="textEmailAddress"
+        app:title="Email address" />
+
+    <com.example.fooddeliveryapp.View.InputField
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:inputType="textPassword"
+        app:title="Password" />
+
+    <com.example.fooddeliveryapp.View.InputField
+        android:id="@+id/repeat_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:inputType="textPassword"
+        app:title="Repeat Password" />
+
+    <com.example.fooddeliveryapp.View.InputField
+        android:id="@+id/input_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:title="NickName" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.example.fooddeliveryapp.View.ActionButton
+        android:id="@+id/button_enter"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:text="@string/action"
+        android:textAlignment="center"
+        android:layout_margin="20dp"
+        android:layout_gravity="center" />
+</LinearLayout>
